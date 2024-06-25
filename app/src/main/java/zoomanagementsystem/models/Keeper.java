@@ -14,12 +14,16 @@ public class Keeper<T extends Animal> {
         this.animals.add(animal);
     }
 
-    public void groom(CanBeGroomed animal) {
+    public void groom(AnimalThatCanBeGroomed animal) {
         animal.groom();
     }
 
     public void feed(Animal animal) {
         animal.feed();
+    }
+
+    public void muckOut(CanBeMuckedOut animal){
+        animal.MuckOut();
     }
 
     public List<T> getResponsibleAnimals() {
