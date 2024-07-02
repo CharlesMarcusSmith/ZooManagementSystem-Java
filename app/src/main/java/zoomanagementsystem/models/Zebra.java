@@ -12,7 +12,7 @@ public class Zebra extends AnimalThatCanBeGroomed implements LargeAnimal, CanBeM
     private LocalDateTime lastMuckedOut;
 
     @Override
-    public void MuckOut() {
+    public void muckOut() {
         lastMuckedOut = LocalDateTime.now();
     }
 
