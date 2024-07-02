@@ -3,6 +3,7 @@ package zoomanagementsystem;
 import zoomanagementsystem.models.*;
 import zoomanagementsystem.services.FeedingScheduler;
 import zoomanagementsystem.services.GroomingScheduler;
+import zoomanagementsystem.services.MuckOutScheduler;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -34,9 +35,12 @@ public class App {
 
         FeedingScheduler feedingScheduler = FeedingScheduler.getInstance();
         GroomingScheduler groomingScheduler = GroomingScheduler.getInstance();
+        MuckOutScheduler muckOutScheduler = MuckOutScheduler.getInstance();
 
         feedingScheduler.assignFeedingJobs(keepers);
         groomingScheduler.assignGroomingJobs(keepers);
+        muckOutScheduler.assignMuckOutJobs(keepers);
+
         animals.forEach(System.out::println);
     }
 }

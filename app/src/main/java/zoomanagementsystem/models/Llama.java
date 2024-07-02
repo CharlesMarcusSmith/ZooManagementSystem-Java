@@ -4,8 +4,8 @@ import java.text.MessageFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class Zebra extends AnimalThatCanBeGroomed implements LargeAnimal, CanBeMuckedOut {
-    public Zebra(LocalDate dateOfBirth) {
+public class Llama extends AbstractAnimal implements LargeAnimal, CanBeMuckedOut {
+    public Llama(LocalDate dateOfBirth) {
         super(dateOfBirth);
     }
 
